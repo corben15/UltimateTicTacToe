@@ -16,8 +16,13 @@ pp = pprint.PrettyPrinter(indent=4)
 def main():
     grid = Grid()
     pp.pprint(grid.grid)
+    grid.gridPrint()
     grid.placeX(0,1)
+    grid.gridPrint()
+    grid.placeO(1,1)
     pp.pprint(grid.grid)
+    grid.gridPrint()
+
 
 if __name__ == '__main__':
     main()
